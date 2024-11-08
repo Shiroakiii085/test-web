@@ -31,7 +31,6 @@ html {
     z-index: 9999;
     animation: fadeOut 1.2s forwards;
     animation-delay: 2.6s;
-    /* Hiển thị màn hình loading trong 3 giây */
 }
 
 @keyframes fadeOut {
