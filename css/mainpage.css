@@ -1,0 +1,376 @@
+@font-face {
+    font-family: thu_phap;
+    src: url('./assets/font/Vongdohl.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeOut 1.2s forwards;
+    animation-delay: 2.6s;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#loading-screen video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    padding: 1rem 9%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.3);
+}
+
+menu a {
+    font-family: thu_phap;
+    font-size: 3rem;
+    color: white;
+    margin-left: 2.5rem;
+    font-weight: 600;
+    transition: color 0.5s ease, background-color 0.5 ease;
+    border-bottom: 3px solid transparent;
+    z-index: 0;
+}
+
+menu a.active,
+menu a:hover {
+    color: #ecff1c
+}
+
+menu .animation {
+    position: absolute;
+    height: 5px;
+    width: 150px;
+    margin-left: 20px;
+    left: 630px;
+    top: 0;
+    z-index: -1;
+    background: #f9bb00;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+
+a:nth-child(1) {
+    width: 150px;
+}
+
+nav .start-homepage,
+a:nth-child(1):hover~.animation {
+    width: 150px;
+    left: 630px;
+}
+
+a:nth-child(2) {
+    width: 170px;
+}
+
+nav .start-characters,
+a:nth-child(2):hover~.animation {
+    width: 180px;
+    left: 795px;
+}
+
+a:nth-child(3) {
+    width: 140px;
+}
+
+nav .start-news,
+a:nth-child(3):hover~.animation {
+    width: 90px;
+    left: 990px;
+}
+
+a:nth-child(4) {
+    width: 180px;
+}
+
+nav .start-storyline,
+a:nth-child(4):hover~.animation {
+    width: 180px;
+    left: 1085px;
+}
+
+a:nth-child(5) {
+    width: 110px;
+}
+
+nav .start-login,
+a:nth-child(5):hover~.animation {
+    width: 110px;
+    left: 1270px;
+}
+
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+#page1 {
+    background-image: url('./assets/pic/TumLum/Wk&Erlang.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.home .home-content h1 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content h3 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 50px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-content p {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    color: aliceblue;
+    font-size: 1.6rem;
+}
+
+.icon-mxh a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #b74b4b;
+}
+
+.icon-mxh a:hover {
+    color: black;
+    transform: scale(1.3) translateY(-8px);
+    background-color: #b74b4b;
+    box-shadow: 0 0 25px #b74b4b;
+}
+
+.youtube {
+    margin-left: 30px;
+}
+
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    justify-content: center;
+    display: flex;
+    padding: 1rem 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    border: 2px solid #b74b4b;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    transform: scale3d(1.3);
+    background-color: yellow;
+    box-shadow: 0 0 25px #b74b4b;
+}
+
+.typing-text {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span {
+    position: relative;
+}
+
+.typing-text span::before {
+    font-family: thu_phap;
+    content: "";
+    color: #000000;
+    animation: words 20s infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 3px solid #b74b4b;
+    }
+}
+
+@keyframes words {
+
+    0%,
+    20% {
+        content: "Te Thien Dai Thanh";
+    }
+
+    21%,
+    40% {
+        content: "Ton Ngo Khong";
+    }
+
+    41%,
+    60% {
+        content: "My Hau Vuong";
+    }
+
+    61%,
+    80% {
+        content: "Sun Wukong";
+    }
+
+    81%,
+    100% {
+        content: "Thien Menh Hau";
+    }
+}
+
+@media (max-width: 1000px) {
+    .home {
+        gap: 4rem;
+    }
+}
+
+@media(max-width:995px) {
+    .home {
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+
+    .home .home-content h3 {
+        font-size: 2.5rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
+
+.video-preview video {
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#page2 {
+    background-image: url('./assets/pic/PhongCanh/PhongCanh6.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#page3 {
+    background: url('./assets/pic/TumLum/wkVSwk.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.word-page3 h1 {
+    font-family: thu_phap;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 25%;
+    color: #fff;
+}
+
+#page4 {
+    background-image: url('./assets/pic/TumLum/wkVSerlang.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.word-page4 h1 {
+    font-family: thu_phap;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 25%;
+    color: #000000;
+}
+
+#page5 {
+    background-image: url('./assets/pic/TumLum/pig&god.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.word-page5 h1 {
+    font-family: thu_phap;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 25%;
+    color: #000000;
+}

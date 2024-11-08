@@ -1,0 +1,246 @@
+@font-face {
+    font-family: thu_phap;
+    src: url('./assets/font/Vongdohl.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: thu_phap;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeOut 1.2s forwards;
+    animation-delay: 2.6s;
+    /* Hiển thị màn hình loading trong 3 giây */
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#loading-screen video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    padding: 1rem 9%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.logo {
+    cursor: pointer;
+    transition: 0.5s ease;
+    /* Hoạt ảnh của logo BMW */
+}
+
+.logo:hover {
+    transform: scale(1.3);
+    /* Phóng to logo khi di chuột vào */
+}
+
+menu a {
+    font-family: thu_phap;
+    font-size: 3rem;
+    color: white;
+    margin-left: 2.5rem;
+    font-weight: 600;
+    transition: color 0.5s ease, background-color 0.5 ease;
+    border-bottom: 3px solid transparent;
+    z-index: 10;
+}
+
+menu a.active,
+menu a:hover {
+    color: #ecff1c
+}
+
+menu .animation {
+    position: absolute;
+    height: 5px;
+    width: 180px;
+    margin-left: 20px;
+    left: 1085px;
+    top: 0;
+    z-index: -1;
+    background: #f9bb00;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+
+a:nth-child(1) {
+    width: 150px;
+}
+
+nav .start-homepage,
+a:nth-child(1):hover~.animation {
+    width: 150px;
+    left: 630px;
+}
+
+a:nth-child(2) {
+    width: 170px;
+}
+
+nav .start-characters,
+a:nth-child(2):hover~.animation {
+    width: 180px;
+    left: 795px;
+}
+
+a:nth-child(3) {
+    width: 140px;
+}
+
+nav .start-news,
+a:nth-child(3):hover~.animation {
+    width: 90px;
+    left: 990px;
+}
+
+a:nth-child(4) {
+    width: 180px;
+}
+
+nav .start-storyline,
+a:nth-child(4):hover~.animation {
+    width: 180px;
+    left: 1085px;
+}
+
+a:nth-child(5) {
+    width: 110px;
+}
+
+nav .start-login,
+a:nth-child(5):hover~.animation {
+    width: 110px;
+    left: 1270px;
+}
+
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+#page1 {
+    background-image: url('./assets/pic/chapter1/BG/pageBg01.png');
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #000000;
+}
+
+.word-page1 h1 {
+    color: white;
+    font-size: 70px;
+    margin-top: 430px;
+    margin-left: 450px;
+}
+
+#page2 {
+    background-image: url('./assets/pic/TumLum/hoanghon.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #000000;
+}
+
+.Chapter {
+    display: block;
+    position: relative;
+    width: 1200px !important;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 0;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+
+.Chapter:hover {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.Chapter span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.Chapter:hover span {
+    opacity: 1;
+}
+
+#chap1 {
+    background-image: url('./assets/pic/EndOfChapter/Chap1.jpg');
+}
+
+#chap2 {
+    background-image: url('./assets/pic/EndOfChapter/chap2.jpg');
+}
+
+#chap3 {
+    background-image: url('./assets/pic/EndOfChapter/Chap3.jpg');
+}
+
+#chap4 {
+    background-image: url('./assets/pic/EndOfChapter/Chap4.jpg');
+}
+
+#chap5 {
+    background-image: url('./assets/pic/EndOfChapter/Chap5.jpg');
+}
+
+#chap6 {
+    background-image: url('./assets/pic/EndOfChapter/Chap6.jpg');
+}
