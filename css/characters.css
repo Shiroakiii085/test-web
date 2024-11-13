@@ -31,7 +31,6 @@ html {
     z-index: 9999;
     animation: fadeOut 1.2s forwards;
     animation-delay: 2.6s;
-    /* Hiển thị màn hình loading trong 3 giây */
 }
 
 @keyframes fadeOut {
@@ -103,56 +102,6 @@ menu .animation {
     background: #f9bb00;
     border-radius: 8px;
     transition: all .5s ease 0s;
-}
-
-a:nth-child(1) {
-    width: 150px;
-}
-
-nav .start-homepage,
-a:nth-child(1):hover~.animation {
-    width: 150px;
-    left: 630px;
-}
-
-a:nth-child(2) {
-    width: 170px;
-}
-
-nav .start-characters,
-a:nth-child(2):hover~.animation {
-    width: 180px;
-    left: 795px;
-}
-
-a:nth-child(3) {
-    width: 140px;
-}
-
-nav .start-news,
-a:nth-child(3):hover~.animation {
-    width: 90px;
-    left: 990px;
-}
-
-a:nth-child(4) {
-    width: 180px;
-}
-
-nav .start-storyline,
-a:nth-child(4):hover~.animation {
-    width: 180px;
-    left: 1085px;
-}
-
-a:nth-child(5) {
-    width: 110px;
-}
-
-nav .start-login,
-a:nth-child(5):hover~.animation {
-    width: 110px;
-    left: 1270px;
 }
 
 #characters-show {

@@ -87,7 +87,8 @@ menu a {
 
 menu a.active,
 menu a:hover {
-    color: #ecff1c
+    color: #ecff1c;
+    border-bottom: 5px solid #ecff1c;
 }
 
 menu .animation {
@@ -103,60 +104,7 @@ menu .animation {
     transition: all .5s ease 0s;
 }
 
-a:nth-child(1) {
-    width: 150px;
-}
 
-nav .start-homepage,
-a:nth-child(1):hover~.animation {
-    width: 150px;
-    left: 630px;
-}
-
-a:nth-child(2) {
-    width: 170px;
-}
-
-nav .start-characters,
-a:nth-child(2):hover~.animation {
-    width: 180px;
-    left: 795px;
-}
-
-a:nth-child(3) {
-    width: 140px;
-}
-
-nav .start-news,
-a:nth-child(3):hover~.animation {
-    width: 90px;
-    left: 990px;
-}
-
-a:nth-child(4) {
-    width: 180px;
-}
-
-nav .start-storyline,
-a:nth-child(4):hover~.animation {
-    width: 180px;
-    left: 1085px;
-}
-
-a:nth-child(5) {
-    width: 110px;
-}
-
-nav .start-login,
-a:nth-child(5):hover~.animation {
-    width: 110px;
-    left: 1270px;
-}
-
-section {
-    min-height: 100vh;
-    padding: 5rem 9% 5rem;
-}
 
 .home {
     width: 100%;
