@@ -88,7 +88,6 @@ menu a {
 menu a.active,
 menu a:hover {
     color: #ecff1c;
-    border-bottom: 5px solid #ecff1c;
 }
 
 menu .animation {
@@ -103,8 +102,6 @@ menu .animation {
     border-radius: 8px;
     transition: all .5s ease 0s;
 }
-
-
 
 .home {
     width: 100%;
@@ -218,27 +215,27 @@ menu .animation {
 
     0%,
     20% {
-        content: "Te Thien Dai Thanh";
+        content: "Black Myth: Wukong";
     }
 
     21%,
     40% {
-        content: "Ton Ngo Khong";
+        content: "Hac Than Thoai: Ngo Khong";
     }
 
     41%,
     60% {
-        content: "My Hau Vuong";
+        content: "Hanh Trinh Tim Lai Luc Can";
     }
 
     61%,
     80% {
-        content: "Sun Wukong";
+        content: "Kham Pha Cot Truyen Moi La";
     }
 
     81%,
     100% {
-        content: "Thien Menh Hau";
+        content: "Designed By HieuPham";
     }
 }
 
