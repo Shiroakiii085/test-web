@@ -160,35 +160,5 @@ section {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.Chapter:hover span {
-    opacity: 1;
-}
-
-#chap1 {
-    background-image: url('./assets/pic/EndOfChapter/Chap1.jpg');
-}
-
-#chap2 {
-    background-image: url('./assets/pic/EndOfChapter/chap2.jpg');
-}
-
-#chap3 {
-    background-image: url('./assets/pic/EndOfChapter/Chap3.jpg');
-}
-
-#chap4 {
-    background-image: url('./assets/pic/EndOfChapter/Chap4.jpg');
-}
-
-#chap5 {
-    background-image: url('./assets/pic/EndOfChapter/Chap5.jpg');
-}
-
-#chap6 {
-    background-image: url('./assets/pic/EndOfChapter/Chap6.jpg');
+    transform: translate(-50%, -chap6.jpg');
 }
